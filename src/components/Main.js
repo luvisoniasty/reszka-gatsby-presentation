@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
 import clients from '../images/clients.jpg'
 import teva from '../images/clients/teva-logo-180x64.png'
 import undofen from '../images/clients/undofen.png'
@@ -27,6 +26,9 @@ import KeyIcon from '../assets/icons/key.svg'
 import TechnicalIcon from '../assets/icons/customer-support.svg'
 import ContentIcon from '../assets/icons/content.svg'
 import OtherIcon from '../assets/icons/clipboards.svg'
+import GReszka from '../images/greszka.jpg'
+import PerformanceMedia from '../images/performance_media.png'
+import HeartIcon from '../assets/icons/love-and-romance.svg'
 
 class Main extends React.Component {
   render() {
@@ -78,15 +80,25 @@ class Main extends React.Component {
           </div>
           <div
             className="documents-section"
-            style={{ justifyContent: 'flex-start', flexDirection: 'row-reverse' }}
+            style={{
+              justifyContent: 'flex-start',
+              flexDirection: 'row-reverse',
+            }}
           >
             <div className="icon-container">
-              <div className="icon" style={{ marginBottom: '12px'}}>
+              <div className="icon" style={{ marginBottom: '12px' }}>
                 <img src={MigrationIcon} alt="migration" className="icon" />
               </div>
               <h3>Migracja</h3>
             </div>
-            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '16px'}}>
+            <ul
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+                marginRight: '16px',
+              }}
+            >
               <li>Mazda</li>
               <li>Desa</li>
             </ul>
@@ -96,10 +108,14 @@ class Main extends React.Component {
             style={{ justifyContent: 'flex-start' }}
           >
             <div className="icon-container">
-              <div className="icon" style={{ marginBottom: '12px'}}>
+              <div className="icon" style={{ marginBottom: '12px' }}>
                 <img src={KeyIcon} alt="key" className="icon" />
               </div>
-              <h3 className="align-center">Keyword<br/>research</h3>
+              <h3 className="align-center">
+                Keyword
+                <br />
+                research
+              </h3>
             </div>
             <ul>
               <li>Voltaren</li>
@@ -116,15 +132,25 @@ class Main extends React.Component {
           </div>
           <div
             className="documents-section"
-            style={{ justifyContent: 'flex-start', flexDirection: 'row-reverse' }}
+            style={{
+              justifyContent: 'flex-start',
+              flexDirection: 'row-reverse',
+            }}
           >
             <div className="icon-container">
-              <div className="icon" style={{ marginBottom: '12px'}}>
+              <div className="icon" style={{ marginBottom: '12px' }}>
                 <img src={TechnicalIcon} alt="technical" className="icon" />
               </div>
               <h3>Techniczne</h3>
             </div>
-            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '16px'}}>
+            <ul
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+                marginRight: '16px',
+              }}
+            >
               <li>Accu Chek - Audyt SEO</li>
               <li>Galeria Młociny - Audyt SEO & Usability</li>
               <li>blinkee - performance & crawl budget</li>
@@ -136,7 +162,7 @@ class Main extends React.Component {
             style={{ justifyContent: 'flex-start' }}
           >
             <div className="icon-container">
-              <div className="icon" style={{ marginBottom: '8px'}}>
+              <div className="icon" style={{ marginBottom: '8px' }}>
                 <img src={ContentIcon} alt="content" className="icon" />
               </div>
               <h3 className="align-center">Content</h3>
@@ -155,15 +181,25 @@ class Main extends React.Component {
           </div>
           <div
             className="documents-section"
-            style={{ justifyContent: 'flex-start', flexDirection: 'row-reverse' }}
+            style={{
+              justifyContent: 'flex-start',
+              flexDirection: 'row-reverse',
+            }}
           >
             <div className="icon-container">
-              <div className="icon" style={{ marginBottom: '12px'}}>
+              <div className="icon" style={{ marginBottom: '12px' }}>
                 <img src={OtherIcon} alt="inne" className="icon" />
               </div>
               <h3>Inne</h3>
             </div>
-            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '16px'}}>
+            <ul
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+                marginRight: '16px',
+              }}
+            >
               <li>Yoursmileon - audyt wdrożeniowy</li>
               <li>Baldivian - audyt wdrożeniowy</li>
               <li>Semmelrock - korelacja GA i GSC z publikacjami w prasie</li>
@@ -303,57 +339,22 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+          <h2 className="major">Współpraca</h2>
+          <div className="love">
+            <div className="circle" style={{ marginBottom: '20px' }}>
+              <img src={GReszka} alt="Grzegorz Reszka" style={{ borderRadius: '50%'}}/>
             </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+            <div className="heart-icon">
+            <img
+              src={HeartIcon}
+              alt="heart"
+              style={{ width: '64px', height: '64px'}}
+            />
             </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+            <div className="circle" style={{ marginTop: '20px' }}>
+              <img src={PerformanceMedia} alt="Performance media" />
             </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
+          </div>
           {close}
         </article>
       </div>

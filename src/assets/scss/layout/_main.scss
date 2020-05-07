@@ -75,6 +75,47 @@
 				}
 			}
 
+			.love {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.circle {
+					width: 202px;
+					height: 202px;
+					border: 1px solid #ffffff;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					z-index: 1000;
+				}
+				.heart-icon {
+					position: relative;
+					width: 64px;
+					height: 64px;
+					&::before {
+						content: '';
+						background-color: #ffffff;
+						position: absolute;
+						width: 1px;
+						height: 35px;
+						top: -22px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+					&::after {
+						content: '';
+						background-color: #ffffff;
+						position: absolute;
+						width: 1px;
+						height: 23px;
+						bottom: -20px;
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+
 			.close {
 				display: block;
 				position: absolute;
