@@ -47,7 +47,7 @@
       display: block;
       position: absolute;
       top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
+      left: calc(50% - #{_size(border-width) * 5});
       width: _size(border-width);
       height: calc(3.5rem + 1px);
       background: _palette(border);
@@ -63,11 +63,13 @@
   }
 
   .logo {
-    width: 5.5rem;
-    height: 5.5rem;
-    line-height: 5.5rem;
+    width: 200px;
+    height: 200px;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .icon {
       &:before {
@@ -218,10 +220,6 @@
     }
 
     .logo {
-      width: 4.75rem;
-      height: 4.75rem;
-      line-height: 4.75rem;
-
       .icon {
         &:before {
           font-size: 1.75rem;

@@ -45,6 +45,16 @@
 				display: block !important;
 			}
 
+			.clients {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				img {
+					margin-bottom: 16px;
+				}
+			}
+
 			.close {
 				display: block;
 				position: absolute;

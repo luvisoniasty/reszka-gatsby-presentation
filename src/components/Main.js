@@ -1,8 +1,25 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import clients from '../images/clients.jpg'
+import teva from '../images/clients/teva-logo-180x64.png'
+import undofen from '../images/clients/undofen.png'
+import bosch from '../images/clients/bosch.jpg'
+import siemens from '../images/clients/siemens-logo-180px.jpg'
+import basecamp from '../images/clients/basecamp.jpg'
+import dominos from '../images/clients/dominos.png'
+import tempur from '../images/clients/tempur.jpg'
+import akademiasmaku from '../images/clients/logo-akademia.png'
+import philipiak from '../images/clients/philipiak.png'
+import testwiedzy from '../images/testwiedzy.jpg'
+import tempurtop10 from '../images/tempurwyniki.jpg'
+import akademiasmakutop10 from '../images/aswyniki.jpg'
+import echodnia from '../images/publications/echodnia.jpg'
+import edziecko from '../images/publications/edziecko.jpg'
+import nicponwkuchni from '../images/publications/nicponwkuchni.jpg'
+import expressilustrowany from '../images/publications/expressilustrowany.jpg'
+import gk24 from '../images/publications/gk24.jpg'
 
 class Main extends React.Component {
   render() {
@@ -22,8 +39,8 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="documents"
+          className={`${this.props.article === 'documents' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
@@ -56,60 +73,111 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="clients"
+          className={`${this.props.article === 'clients' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Klienci</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={clients} alt="clients" />
           </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <div className="clients">
+            <h3 className="align-center">Byli</h3>
+            <img src={teva} alt="teva" style={{ width: '165px' }} />
+            <h3 className="align-center">Aktualni</h3>
+            <img
+              src={akademiasmaku}
+              alt="akademia smaku"
+              style={{ width: '350px' }}
+            />
+            <img src={tempur} alt="tempur" style={{ width: '300px' }} />
+            <img src={dominos} alt="dominos" style={{ width: '165px' }} />
+            <img src={philipiak} alt="philipiak" style={{ width: '165px' }} />
+            <img src={basecamp} alt="basecamp" style={{ width: '165px' }} />
+            <img src={bosch} alt="bosch" style={{ width: '165px' }} />
+            <img src={siemens} alt="siemens" style={{ width: '165px' }} />
+            <h3>Przyszli</h3>
+            <img src={undofen} alt="undofen" style={{ width: '165px' }} />
+          </div>
           {close}
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="results"
+          className={`${this.props.article === 'results' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Wyniki</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+          <div className="clients">
+            <h3>Test wiedzy</h3>
+            <img src={testwiedzy} alt="test wiedzy" />
+            <h3>Tempur TOP 10</h3>
+            <img
+              src={tempurtop10}
+              alt="top 10 tempur"
+              style={{ width: '80%' }}
+            />
+            <h3>Akademia Smaku TOP 10</h3>
+            <img
+              src={akademiasmakutop10}
+              alt="top 10 akademia smaku"
+              style={{ width: '80%' }}
+            />
+            <h3>Publikacje</h3>
+            <a href="https://echodnia.eu/tradycyjne-potrawy-wielkanocne-co-przygotowac-na-swiateczny-stol/ar/c17-14896939" style={{ marginBottom: '5px'}}>
+              Tradycyjne potrawy wielkanocne - co przygotować na świąteczny stół?
+            </a>
+            <img
+              src={echodnia}
+              alt="echodnia"
+              style={{ width: '80%', marginBottom: '16px' }}
+            />
+            <a href="https://www.edziecko.pl/edziecko/7,79308,24931026,jaki-materac-dla-dziecka-podpowiadamy.html " style={{ marginBottom: '5px'}}>
+              Jaki materac dla dziecka? Podpowiadamy!
+            </a>
+            <img
+              src={edziecko}
+              alt="edziecko"
+              style={{ width: '80%', marginBottom: '16px' }}
+            />
+            <a href="https://nicponwkuchni.pl/pizza-bezglutenowa-przepis/" style={{ marginBottom: '5px'}}>
+              Pizza bezglutenowa. Prosty przepis na ciasto i dodatki
+            </a>
+            <img
+              src={nicponwkuchni}
+              alt="nicponwkuchni"
+              style={{ width: '80%', marginBottom: '16px' }}
+            />
+            <a href="https://expressilustrowany.pl/przetwory-z-jablek-nie-tylko-dzemy/ar/c8-14239289" style={{ marginBottom: '5px'}}>
+              Przetwory z jabłek: nie tylko dżemy
+            </a>
+            <img
+              src={expressilustrowany}
+              alt="expressilustrowany"
+              style={{ width: '80%', marginBottom: '16px' }}
+            />
+            <a href="https://gk24.pl/kaszel-w-nocy-u-dziecka-czego-jest-objawem-i-jak-go-leczyc/ar/c14-14623275" style={{ marginBottom: '5px'}}>
+              Kaszel w nocy u dziecka – czego jest objawem i jak go leczyć?
+            </a>
+            <img
+              src={gk24}
+              alt="gk24"
+              style={{ width: '80%', marginBottom: '16px' }}
+            />
+          </div>
           {close}
         </article>
 
         <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+          id="partnership"
+          className={`${this.props.article === 'partnership' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
