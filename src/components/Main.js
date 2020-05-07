@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
-import pic03 from '../images/pic03.jpg'
 import clients from '../images/clients.jpg'
 import teva from '../images/clients/teva-logo-180x64.png'
 import undofen from '../images/clients/undofen.png'
@@ -12,6 +11,7 @@ import dominos from '../images/clients/dominos.png'
 import tempur from '../images/clients/tempur.jpg'
 import akademiasmaku from '../images/clients/logo-akademia.png'
 import philipiak from '../images/clients/philipiak.png'
+import results from '../images/results.jpg'
 import testwiedzy from '../images/testwiedzy.jpg'
 import tempurtop10 from '../images/tempurwyniki.jpg'
 import akademiasmakutop10 from '../images/aswyniki.jpg'
@@ -20,6 +20,10 @@ import edziecko from '../images/publications/edziecko.jpg'
 import nicponwkuchni from '../images/publications/nicponwkuchni.jpg'
 import expressilustrowany from '../images/publications/expressilustrowany.jpg'
 import gk24 from '../images/publications/gk24.jpg'
+import documents from '../images/documents.jpg'
+import YTIcon from '../assets/icons/youtube.svg'
+import MigrationIcon from '../assets/icons/file.svg'
+import KeyIcon from '../assets/icons/key.svg'
 
 class Main extends React.Component {
   render() {
@@ -45,30 +49,68 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Dokumenty</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={documents} alt="Documents" />
           </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          <div
+            className="documents-section"
+            style={{ justifyContent: 'flex-start' }}
+          >
+            <div className="icon-container">
+              <div className="icon">
+                <img src={YTIcon} alt="youtube" className="icon" />
+              </div>
+              <h3>YouTube</h3>
+            </div>
+            <ul>
+              <li>Karcher</li>
+              <li>Bonduelle</li>
+              <li>Dominos</li>
+              <li>Braun</li>
+              <li>Kuchnia Lidla</li>
+              <li>Akademia smaku</li>
+              <li>ORAL-B</li>
+            </ul>
+          </div>
+          <div
+            className="documents-section"
+            style={{ justifyContent: 'flex-start', flexDirection: 'row-reverse' }}
+          >
+            <div className="icon-container">
+              <div className="icon" style={{ marginBottom: '12px'}}>
+                <img src={MigrationIcon} alt="migration" className="icon" />
+              </div>
+              <h3>Migracja</h3>
+            </div>
+            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '16px'}}>
+              <li>Mazda</li>
+              <li>Desa</li>
+            </ul>
+          </div>
+          <div
+            className="documents-section"
+            style={{ justifyContent: 'flex-start' }}
+          >
+            <div className="icon-container">
+              <div className="icon" style={{ marginBottom: '12px'}}>
+                <img src={KeyIcon} alt="key" className="icon" />
+              </div>
+              <h3 className="align-center">Keyword<br/>research</h3>
+            </div>
+            <ul>
+              <li>Voltaren</li>
+              <li>Yoursmileon</li>
+              <li>DESA</li>
+              <li>Libero Katowice</li>
+              <li>Merlin</li>
+              <li>Lidl</li>
+              <li>Tempur</li>
+              <li>Mercedes</li>
+              <li>Braun</li>
+              <li>Akademia smaku - aktualizacje</li>
+            </ul>
+          </div>
           {close}
         </article>
 
@@ -113,7 +155,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Wyniki</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={results} alt="Wyniki" />
           </span>
           <div className="clients">
             <h3>Test wiedzy</h3>
@@ -131,15 +173,22 @@ class Main extends React.Component {
               style={{ width: '80%' }}
             />
             <h3>Publikacje</h3>
-            <a href="https://echodnia.eu/tradycyjne-potrawy-wielkanocne-co-przygotowac-na-swiateczny-stol/ar/c17-14896939" style={{ marginBottom: '5px'}}>
-              Tradycyjne potrawy wielkanocne - co przygotować na świąteczny stół?
+            <a
+              href="https://echodnia.eu/tradycyjne-potrawy-wielkanocne-co-przygotowac-na-swiateczny-stol/ar/c17-14896939"
+              style={{ marginBottom: '5px' }}
+            >
+              Tradycyjne potrawy wielkanocne - co przygotować na świąteczny
+              stół?
             </a>
             <img
               src={echodnia}
               alt="echodnia"
               style={{ width: '80%', marginBottom: '16px' }}
             />
-            <a href="https://www.edziecko.pl/edziecko/7,79308,24931026,jaki-materac-dla-dziecka-podpowiadamy.html " style={{ marginBottom: '5px'}}>
+            <a
+              href="https://www.edziecko.pl/edziecko/7,79308,24931026,jaki-materac-dla-dziecka-podpowiadamy.html "
+              style={{ marginBottom: '5px' }}
+            >
               Jaki materac dla dziecka? Podpowiadamy!
             </a>
             <img
@@ -147,7 +196,10 @@ class Main extends React.Component {
               alt="edziecko"
               style={{ width: '80%', marginBottom: '16px' }}
             />
-            <a href="https://nicponwkuchni.pl/pizza-bezglutenowa-przepis/" style={{ marginBottom: '5px'}}>
+            <a
+              href="https://nicponwkuchni.pl/pizza-bezglutenowa-przepis/"
+              style={{ marginBottom: '5px' }}
+            >
               Pizza bezglutenowa. Prosty przepis na ciasto i dodatki
             </a>
             <img
@@ -155,7 +207,10 @@ class Main extends React.Component {
               alt="nicponwkuchni"
               style={{ width: '80%', marginBottom: '16px' }}
             />
-            <a href="https://expressilustrowany.pl/przetwory-z-jablek-nie-tylko-dzemy/ar/c8-14239289" style={{ marginBottom: '5px'}}>
+            <a
+              href="https://expressilustrowany.pl/przetwory-z-jablek-nie-tylko-dzemy/ar/c8-14239289"
+              style={{ marginBottom: '5px' }}
+            >
               Przetwory z jabłek: nie tylko dżemy
             </a>
             <img
@@ -163,7 +218,10 @@ class Main extends React.Component {
               alt="expressilustrowany"
               style={{ width: '80%', marginBottom: '16px' }}
             />
-            <a href="https://gk24.pl/kaszel-w-nocy-u-dziecka-czego-jest-objawem-i-jak-go-leczyc/ar/c14-14623275" style={{ marginBottom: '5px'}}>
+            <a
+              href="https://gk24.pl/kaszel-w-nocy-u-dziecka-czego-jest-objawem-i-jak-go-leczyc/ar/c14-14623275"
+              style={{ marginBottom: '5px' }}
+            >
               Kaszel w nocy u dziecka – czego jest objawem i jak go leczyć?
             </a>
             <img
