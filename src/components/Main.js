@@ -14,6 +14,7 @@ import results from '../images/results.jpg'
 import testwiedzy from '../images/testwiedzy.jpg'
 import tempurtop10 from '../images/tempurwyniki.jpg'
 import akademiasmakutop10 from '../images/aswyniki.jpg'
+import kuchniawppl from '../images/publications/kuchniawppl.jpg'
 import echodnia from '../images/publications/echodnia.jpg'
 import edziecko from '../images/publications/edziecko.jpg'
 import nicponwkuchni from '../images/publications/nicponwkuchni.jpg'
@@ -272,6 +273,17 @@ class Main extends React.Component {
               style={{ width: '80%' }}
             />
             <h3>Publikacje</h3>
+            <a
+              href="https://kuchnia.wp.pl/szklanka-maki-i-szklanka-cukru-ile-to-gramow-6408073748154497a  "
+              style={{ marginBottom: '5px' }}
+            >
+              Szklanka mąki i szklanka cukru - ile to gramów?
+            </a>
+            <img
+              src={kuchniawppl}
+              alt="kuchniawppl"
+              style={{ width: '80%', marginBottom: '16px' }}
+            />
             <a
               href="https://echodnia.eu/tradycyjne-potrawy-wielkanocne-co-przygotowac-na-swiateczny-stol/ar/c17-14896939"
               style={{ marginBottom: '5px' }}
