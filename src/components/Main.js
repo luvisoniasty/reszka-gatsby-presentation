@@ -24,6 +24,9 @@ import documents from '../images/documents.jpg'
 import YTIcon from '../assets/icons/youtube.svg'
 import MigrationIcon from '../assets/icons/file.svg'
 import KeyIcon from '../assets/icons/key.svg'
+import TechnicalIcon from '../assets/icons/customer-support.svg'
+import ContentIcon from '../assets/icons/content.svg'
+import OtherIcon from '../assets/icons/clipboards.svg'
 
 class Main extends React.Component {
   render() {
@@ -109,6 +112,66 @@ class Main extends React.Component {
               <li>Mercedes</li>
               <li>Braun</li>
               <li>Akademia smaku - aktualizacje</li>
+            </ul>
+          </div>
+          <div
+            className="documents-section"
+            style={{ justifyContent: 'flex-start', flexDirection: 'row-reverse' }}
+          >
+            <div className="icon-container">
+              <div className="icon" style={{ marginBottom: '12px'}}>
+                <img src={TechnicalIcon} alt="technical" className="icon" />
+              </div>
+              <h3>Techniczne</h3>
+            </div>
+            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '16px'}}>
+              <li>Accu Chek - Audyt SEO</li>
+              <li>Galeria Młociny - Audyt SEO & Usability</li>
+              <li>blinkee - performance & crawl budget</li>
+              <li>GC5 - crawl serwisu</li>
+            </ul>
+          </div>
+          <div
+            className="documents-section"
+            style={{ justifyContent: 'flex-start' }}
+          >
+            <div className="icon-container">
+              <div className="icon" style={{ marginBottom: '8px'}}>
+                <img src={ContentIcon} alt="content" className="icon" />
+              </div>
+              <h3 className="align-center">Content</h3>
+            </div>
+            <ul>
+              <li>Galeria Młociny - audyt treści</li>
+              <li>SONY - uzupełnienie treści na stronie (CMS)</li>
+              <li>Semmelrock - uzupełnienie treści na stronie (CMS)</li>
+              <li>Yoursmileon - teksty na stronę klienta</li>
+              <li>Bosch - analiza + rozbudowa contentu zmywarki</li>
+              <li>Dominos - rozkład nagłówków</li>
+              <li>Semmelrock - title & description</li>
+              <li>BSH - bsh-group, siemens, bosch-home - ALT</li>
+              <li>Polocard - ALT</li>
+            </ul>
+          </div>
+          <div
+            className="documents-section"
+            style={{ justifyContent: 'flex-start', flexDirection: 'row-reverse' }}
+          >
+            <div className="icon-container">
+              <div className="icon" style={{ marginBottom: '12px'}}>
+                <img src={OtherIcon} alt="inne" className="icon" />
+              </div>
+              <h3>Inne</h3>
+            </div>
+            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', marginRight: '16px'}}>
+              <li>Yoursmileon - audyt wdrożeniowy</li>
+              <li>Baldivian - audyt wdrożeniowy</li>
+              <li>Semmelrock - korelacja GA i GSC z publikacjami w prasie</li>
+              <li>Semmelrock - analiza i wytyczne dla dystrbutorów</li>
+              <li>Kruk, infokonsument - audyt linkowania</li>
+              <li>Tempur - nowa formatka raportu</li>
+              <li>Dominos - wytyczne onsite dla nowej wersji</li>
+              <li>Vileda - audyt kart produktowych allegro</li>
             </ul>
           </div>
           {close}
